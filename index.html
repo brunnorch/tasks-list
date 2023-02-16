@@ -20,39 +20,77 @@
     </header>
 
     <main>
-        <div class="toggle">
-            <label class="toggle__label">
-                <input type="checkbox" class="toggle__input">
-                <span class="slider"></span>
-            </label>
+        <div class="container">
+            <div>
+                <h1 class="title">Task List</h1>
+                <h2 class="subtitle">Sua agenda digital</h2>
+            </div>
+            <div class="toggle">
+                <label class="toggle__label">
+                    <input type="checkbox" class="toggle__input">
+                    <span class="slider"></span>
+                </label>
+            </div>
         </div>
 
         <section>
-            <div class="tasks__container">
-                <p>Bico</p>
-                <p>Cadastro com lazaro</p>
-                <p>15/02/2023</p>
-                <p>08:30</p>
+
+            <div class="tasks__todo">
+                <div>
+                    <p class="tasks__title">Bico</p>
+                    <p class="tasks__description">Cadastro com lazaro</p>
+                </div>
+                <div>
+                    <p class="tasks__date">15/02/2023</p>
+                    <p class="tasks__time">08:30</p>
+                </div>
             </div>
+            <div class="tasks__todo">
+                <div>
+                    <p class="tasks__title">Bico</p>
+                    <p class="tasks__description">Cadastro com lazaro</p>
+                </div>
+                <div>
+                    <p class="tasks__date">15/02/2023</p>
+                    <p class="tasks__time">08:30</p>
+                </div>
+            </div>
+            <div class="tasks__todo">
+                <div>
+                    <p class="tasks__title">Bico</p>
+                    <p class="tasks__description">Cadastro com lazaro</p>
+                </div>
+                <div>
+                    <p class="tasks__date">15/02/2023</p>
+                    <p class="tasks__time">08:30</p>
+                </div>
+            </div>
+            <div class="tasks__todo">
+                <div>
+                    <p class="tasks__title">Bico</p>
+                    <p class="tasks__description">Cadastro com lazaro</p>
+                </div>
+                <div>
+                    <p class="tasks__date">15/02/2023</p>
+                    <p class="tasks__time">08:30</p>
+                </div>
+            </div>
+
         </section>
 
         <section>
-            <h1>Task List</h1>
-            <h2>Sua agenda digital</h2>
 
-            <div>
-                <form>
-                    <label for="task">Nome da tarefa</label>
-                    <input type="text">
-                    <label for="description">Descrição</label>
-                    <input type="text">
-                    <label for="date">Vencimento</label>
-                    <input type="date">
-                    <label for="date">Horário</label>
-                    <input type="time">
-
-                </form>
-            </div>
+            <form class="form">
+                <input type="text" placeholder="Nome da tarefa" class="form__task">
+                <input type="text" placeholder="Descrição" class="form__task">
+                <div>
+                    <!-- <label for="date" class="label__task">Vencimento</label> -->
+                    <input type="date" placeholder="date" class="form__task">
+                    <!-- <label for="time" class="label__task">Horário</label> -->
+                    <input type="time" class="form__task">
+                </div>
+                <input type="submit" value="Adicionar tarefa" class="form__task-btn">
+            </form>
 
         </section>
 
