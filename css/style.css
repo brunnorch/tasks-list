@@ -3,12 +3,13 @@
 :root {
   --font: 'Signika Negative';
   --bg: #F1D3B3;
-  --bg-dark: #838297;
-  --bg-task: #C7BCA1;
+  --bg-dark: #565569;
   --bg-header: #C7BCA1;
-  --color: #242424;
+  --dark: #31314d;
   --light: #cab196;
-  --dark: #5e5d6e;
+  --bg-task: #C7BCA1;
+  --color: #242424;
+  --btn: #950101d2;
 }
 
 body {
@@ -127,22 +128,42 @@ input:checked~.slider::before {
 
 
 /* FORM TASKS */
+.form__title {
+  font-size: 1.3em;
+  font-weight: 400;
+  text-align: center;
+  margin: 2em 0 0.2em;
+}
 
 
 .form {
   background-color: var(--bg-task);
   display: flex;
-  flex-direction: column;
-  align-items: center;
   border-radius: 30px 60px;
-  padding: 2em 3em;
-  margin: 1em 0.5em;
+  padding: 1em 2.5em;
+  margin: 0em 0.5em;
 }
 
-.form__task{
-  margin-bottom: 0.4em ;
+
+.form__task-taskdescription {}
+
+.form__task-datetime {
+  text-align: end;
 }
 
-.form__task-btn{
-  width: 50%;
+.form__task {
+  font-size: 1em;
+  margin-bottom: 0.8em;
+  border: none;
+  background-color: var(--bg-task);
+  width: 95%;
+}
+
+.form__task-btn {
+  background-color: var(--btn);
+  color: var(--light);
+  border: none;
+  border-radius: 5px;
+  padding: 0.3em 0.5em;
+  margin-top: 0.6em;
 }

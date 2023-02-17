@@ -36,9 +36,24 @@
         <section>
 
             <div class="tasks__todo">
+                <div class="task-description">
+                    <p class="tasks__title">Estudar</p>
+                    <p class="tasks__description">javascript</p>
+                </div>
+                <div class="task-datetime">
+                    <p class="tasks__date">15/02/2023</p>
+                    <p class="tasks__time">08:30</p>
+                </div>
+                <div class="task-edits">
+                    <p>V</p>
+                    <p>//</p>
+                    <p>X</p>
+                </div>
+            </div>
+            <div class="tasks__todo">
                 <div>
-                    <p class="tasks__title">Bico</p>
-                    <p class="tasks__description">Cadastro com lazaro</p>
+                    <p class="tasks__title">Treinar</p>
+                    <p class="tasks__description">#BackDay</p>
                 </div>
                 <div>
                     <p class="tasks__date">15/02/2023</p>
@@ -47,8 +62,8 @@
             </div>
             <div class="tasks__todo">
                 <div>
-                    <p class="tasks__title">Bico</p>
-                    <p class="tasks__description">Cadastro com lazaro</p>
+                    <p class="tasks__title">Cinema</p>
+                    <p class="tasks__description">Avatar 3D</p>
                 </div>
                 <div>
                     <p class="tasks__date">15/02/2023</p>
@@ -57,18 +72,8 @@
             </div>
             <div class="tasks__todo">
                 <div>
-                    <p class="tasks__title">Bico</p>
-                    <p class="tasks__description">Cadastro com lazaro</p>
-                </div>
-                <div>
-                    <p class="tasks__date">15/02/2023</p>
-                    <p class="tasks__time">08:30</p>
-                </div>
-            </div>
-            <div class="tasks__todo">
-                <div>
-                    <p class="tasks__title">Bico</p>
-                    <p class="tasks__description">Cadastro com lazaro</p>
+                    <p class="tasks__title">Pagar boleto</p>
+                    <p class="tasks__description">Consorcio da desgraça, 400 reais é foda</p>
                 </div>
                 <div>
                     <p class="tasks__date">15/02/2023</p>
@@ -79,17 +84,19 @@
         </section>
 
         <section>
-
+            <h3 class="form__title">Adicione uma tarefa</h3>
             <form class="form">
-                <input type="text" placeholder="Nome da tarefa" class="form__task">
-                <input type="text" placeholder="Descrição" class="form__task">
-                <div>
+                <div class="form__task-taskdescription">
+                    <input type="text" placeholder="Nome da tarefa" class="form__task">
+                    <input type="text" placeholder="Descrição" class="form__task">
+                </div>
+                <div class="form__task-datetime">
                     <!-- <label for="date" class="label__task">Vencimento</label> -->
                     <input type="date" placeholder="date" class="form__task">
                     <!-- <label for="time" class="label__task">Horário</label> -->
                     <input type="time" class="form__task">
+                    <input type="submit" value="Adicionar tarefa" class="form__task-btn">
                 </div>
-                <input type="submit" value="Adicionar tarefa" class="form__task-btn">
             </form>
 
         </section>

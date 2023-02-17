@@ -1,0 +1,21 @@
+{
+  "name": "tasks-list",
+  "version": "1.0.0",
+  "description": "Lista de tarefas",
+  "main": "js/index.js",
+  "scripts": {
+    "start": "node js/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunnorch/tasks-list.git"
+  },
+  "author": "Brunno Rocha",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/brunnorch/tasks-list/issues"
+  },
+  "homepage": "https://github.com/brunnorch/tasks-list#readme"
+}
