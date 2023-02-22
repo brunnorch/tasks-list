@@ -1,15 +1,16 @@
-function DNAStrand(dna) {
-    return dna.replace(/./g, function (c) {
-        console.log(DNAStrand.pairs[c]);
-        return DNAStrand.pairs[c]
-    })
+var timeDisplay = document.getElementById("time");
+
+
+function refreshTime() {
+    var dateString = new Date().toUTCString();
+    var formattedString = dateString.replace(", ", " - ");
+    timeDisplay.innerHTML = formattedString;
 }
 
-DNAStrand.pairs = {
-    A: 'T',
-    T: 'A',
-    C: 'G',
-    G: 'C',
-}
+setInterval(refreshTime, 1000);
 
-DNAStrand('ATTGC');
+var dateString = new Date().toUTCString();
+
+let teste = dateString.split(' ');
+
+console.log(teste);
